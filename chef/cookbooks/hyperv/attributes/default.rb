@@ -21,7 +21,7 @@ default[:python][:path] = 'C:\Python27'
 default[:python][:scripts] = 'C:\Python27\Scripts'
 
 default[:python][:archive] = 'python275.zip'
-default[:python][:installed] = "#{node[:python][:sitepackages]}\\greenlet.pyd"
+default[:python][:installed] = default[:python][:command]
 default[:python][:pywin32register] = 'pywin32_postinstall.py'
 
 default[:openstack][:location] = 'C:\OpenStack'
